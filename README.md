@@ -120,16 +120,16 @@ FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 schema consists of two tables: users and questions.
 
 #### users Table
-id: An integer that serves as the primary key.
-username: A string (VARCHAR) with a maximum length of 100 characters that cannot be null.
-email: A string (VARCHAR) with a maximum length of 255 characters that is unique and cannot be null.
-password: A string (VARCHAR) with a maximum length of 255 characters that cannot be null.
-created_at: A timestamp that defaults to the current timestamp when the record is created.
+- id: An integer that serves as the primary key.
+- username: A string (VARCHAR) with a maximum length of 100 characters that cannot be null.
+- email: A string (VARCHAR) with a maximum length of 255 characters that is unique and cannot be null.
+- password: A string (VARCHAR) with a maximum length of 255 characters that cannot be null.
+- created_at: A timestamp that defaults to the current timestamp when the record is created.
 
 #### questions Table
-id: A string (VARCHAR) with a maximum length of 36 characters that serves as the primary key. This is typically used to store UUIDs.
-user_id: An integer that cannot be null and serves as a foreign key referencing the id in the users table.
-content: A text field that cannot be null.
-created_at: A timestamp that defaults to the current timestamp when the record is created.
-The user_id foreign key ensures referential integrity by linking each question to a specific user. If a user is deleted, all their associated questions will also be deleted (ON DELETE CASCADE).
+- id: A string (VARCHAR) with a maximum length of 36 characters that serves as the primary key. This is typically used to store id.
+- user_id: An integer that cannot be null and serves as a foreign key referencing the id in the users table.
+- content: A text field that cannot be null.
+- created_at: A timestamp that defaults to the current timestamp when the record is created.
+- The user_id foreign key ensures referential integrity by linking each question to a specific user. If a user is deleted,    all their associated questions will also be deleted (ON DELETE CASCADE).
 
