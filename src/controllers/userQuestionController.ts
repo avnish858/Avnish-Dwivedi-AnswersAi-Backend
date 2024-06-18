@@ -15,7 +15,7 @@ export async function postQuestion(req: Request, res: Response) {
 const userId : any = await findUserByUsername(username);
     const newQuestion = await addQuestion(question,userId.id);
     console.log("ress",newQuestion)
-    res.status(201).json(newQuestion);
+    res.status(200).json(newQuestion);
   } catch (error) {
     res.status(500).json({ error: error });
   }
