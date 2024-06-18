@@ -8,9 +8,6 @@ This is a Node.js application written in TypeScript. The application uses enviro
 - [Environment Variables](#environment-variables)
 - [Usage](#usage)
 - [Docker](#docker)
-- [Scripts](#scripts)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
