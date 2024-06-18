@@ -54,28 +54,21 @@ This is a Node.js application written in TypeScript. The application uses enviro
 Here's an example of a Dockerfile for this application:
 
 ```
-# Use the official Node.js image as the base image
-FROM node:14
+FROM node:18
 
-# Set the working directory
 WORKDIR /usr/src/app
-
-# Copy package.json and package-lock.json
 COPY package*.json ./
 
-# Install dependencies
 RUN npm install
 
-# Copy the rest of the application code
 COPY . .
 
-# Build the TypeScript code
+RUN npm install -g typescript
+
 RUN npm run build
 
-# Expose the application port
 EXPOSE 3000
 
-# Command to run the application
 CMD ["npm", "start"]
 
 ```
