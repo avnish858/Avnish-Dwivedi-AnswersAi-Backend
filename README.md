@@ -13,7 +13,7 @@ This is a Node.js application written in TypeScript. The application uses enviro
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (>= 14.x)
+- [Node.js](https://nodejs.org/) (>= 18.x)
 - [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 - [Docker](https://www.docker.com/) (if using Docker)
 
