@@ -22,7 +22,7 @@ This is a Node.js application written in TypeScript. The application uses enviro
 1. Clone the repository:
 
    ```bash
-   git clone [https://github.com/avnish858/Avnish-Dwivedi-AnswersAi-Backend](https://github.com/avnish858/Avnish-Dwivedi-AnswersAi-Backend).git
+   git clone https://github.com/avnish858/Avnish-Dwivedi-AnswersAi-Backend.git
    cd Avnish-Dwivedi-AnswersAi-Backend
 
 2. Install dependencies:
